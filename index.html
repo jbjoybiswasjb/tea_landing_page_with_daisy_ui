@@ -14,6 +14,16 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
 
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans&display=swap"
+            rel="stylesheet">
+
+        <!-- Fontawesome kit. -->
+        <script src="https://kit.fontawesome.com/1bbb5634e6.js" crossorigin="anonymous"></script>
+
         <!-- Custom color. -->
         <script>
             tailwind.config = {
@@ -33,15 +43,8 @@
             }
         </script>
 
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans&display=swap"
-            rel="stylesheet">
-
+        <!-- Main CSS. -->
         <style>
-            
             .manrope_font {
                 font-family: 'Manrope', sans-serif;
             }
@@ -49,7 +52,6 @@
             .plus_jakarta_font {
                 font-family: 'Plus Jakarta Sans', sans-serif;
             }
-
         </style>
 
     </head>
@@ -66,7 +68,7 @@
                                                     Main.
             ===================================================================================
          -->
-        <main class="md:container md:mx-auto">
+        <main class="md:container md:mx-auto p-4">
 
             <!-- 
                                             Good tea section.
@@ -147,7 +149,7 @@
 
 
             <!-- 
-                                            Great tea section.
+                                            News section.
                 ===================================================================
              -->
             <section class="my-32">
@@ -159,13 +161,14 @@
                         by injected humour, or randomised words which don't look even slightly believable.</p>
                 </div>
 
-                <div class="grid grid-cols-3 gap-6">
-                    <div class="card shadow-xl p-5 space-y-3 border border-[#D2D2D2]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card shadow-xl p-5 space-y-3 border border-[#D2D2D2] pt-10">
                         <figure><img src="images/news-1.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <time datetime="2027-02-05 19:42"
                                 class="text-common_paragraph_color text-base font-medium">Feb 05, 2027</time>
-                            <h2 class="card-title text-common_heading_color text-xl font-extrabold">Collecting 8 points for discount</h2>
+                            <h2 class="card-title text-common_heading_color text-xl font-extrabold">Collecting 8 points
+                                for discount</h2>
                             <p class="text-common_paragraph_color text-base font-medium">There are many variations of
                                 passages of Lorem Ipsum available.</p>
                             <div class="card-actions">
@@ -173,12 +176,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card shadow-xl p-5 space-y-3 border border-[#D2D2D2]">
+                    <div class="card shadow-xl p-5 space-y-3 border border-[#D2D2D2] pt-10">
                         <figure><img src="images/news-2.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <time datetime="2027-02-05 19:42"
                                 class="text-common_paragraph_color text-base font-medium">Feb 05, 2027</time>
-                            <h2 class="card-title text-common_heading_color text-xl font-extrabold">Collecting 8 points for discount</h2>
+                            <h2 class="card-title text-common_heading_color text-xl font-extrabold">Collecting 8 points
+                                for discount</h2>
                             <p class="text-common_paragraph_color text-base font-medium">There are many variations of
                                 passages of Lorem Ipsum available.</p>
                             <div class="card-actions">
@@ -186,12 +190,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card shadow-xl p-5 space-y-3 border border-[#D2D2D2]">
+                    <div class="card shadow-xl p-5 space-y-3 border border-[#D2D2D2] pt-10">
                         <figure><img src="images/news-3.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <time datetime="2027-02-05 19:42"
                                 class="text-common_paragraph_color text-base font-medium">Feb 05, 2027</time>
-                            <h2 class="card-title text-common_heading_color text-xl font-extrabold">Collecting 8 points for discount</h2>
+                            <h2 class="card-title text-common_heading_color text-xl font-extrabold">Collecting 8 points
+                                for discount</h2>
                             <p class="text-common_paragraph_color text-base font-medium">There are many variations of
                                 passages of Lorem Ipsum available.</p>
                             <div class="card-actions">
@@ -209,7 +214,54 @@
                                                     Footer.
             ===================================================================================
          -->
-        <footer></footer>
+        <footer class="px-10 py-32 md:container md:mx-auto">
+
+            <div class="flex justify-between items-center p-4 pb-28">
+                <aside class="items-center grid-flow-col">
+                    <a href="">
+                        <img src="images/cup.png" alt="">
+                    </a>
+                </aside>
+                <nav class="flex items-center gap-10 md:place-self-center md:justify-self-end">
+                    <p class="text-foter_text_color text-xl font-medium">Ready to get strated?</p>
+                    <button class="btn btn-primary">Get Ready</button>
+                </nav>
+            </div>
+            <div class="footer">
+                <nav class="space-y-3">
+                    <h6 class="text-common_heading_color text-xl font-semibold mb-4">Quick Links</h6>
+                    <a class="text-foter_text_color text-base font-normal">Home</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">About Us</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">Insurance</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">Privacy Policy</a>
+                </nav>
+                <nav class="space-y-3">
+                    <h6 class="text-common_heading_color text-xl font-semibold mb-4">Our Service</h6>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">Life Insurance</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">Car Insurance</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">Health Insurance</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">House Insurance</a>
+                </nav>
+                <nav class="space-y-3">
+                    <h6 class="text-common_heading_color text-xl font-semibold mb-4">Help</h6>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">FAQs</a>
+                    <a class="link link-hover text-foter_text_color text-base font-normal">Contact Us</a>
+                </nav>
+                <div>
+                    <h3 class="text-common_heading_color text-2xl font-semibold">Subscribe to our <br> newsletter</h3>
+                    <ul class="flex gap-4 text-2xl">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-14">
+                <aside class="text-center text-base text-foter_text_color font-medium">
+                    <p>© 2027 UIDesign.to - All rights reserved.</p>
+                </aside>
+            </div>
+        </footer>
 
     </body>
 
